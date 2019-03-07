@@ -1,0 +1,14 @@
+redis-cli [hostname] -p [port]
+info
+keys *
+get [key name]
+set [key] [value]
+ccs-cli hgetall bdb:1
+rladmin status
+supervisorctl 
+cnm_ctl restart
+rladmin node [node number] remove
+rladmin cluster join [node 1 ip] username [your username] password [your password] 
+rladmin cluster join [node 1 ip] username [your username] password [your password] replace_node [numberod node]
+rladmin cluster create [cluster-FQDN]  username [your username] password [your password]
+tune cluster slave_ha enabled
